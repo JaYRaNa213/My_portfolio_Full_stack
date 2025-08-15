@@ -53,10 +53,10 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+    <nav className="fixed top-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-sm border-b border-gray-200 dark:border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-xl font-bold text-dark">Jay Prakash</div>
+          <div className="text-xl font-bold text-black dark:text-white">Jay Prakash</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
@@ -66,8 +66,8 @@ export default function Navigation() {
                 onClick={() => scrollToSection(item.href)}
                 className={`transition-colors ${
                   activeSection === item.href.substring(1)
-                    ? "text-primary"
-                    : "text-secondary hover:text-primary"
+                    ? "text-black dark:text-white font-semibold"
+                    : "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
                 }`}
               >
                 {item.label}
@@ -90,13 +90,13 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800">
           <div className="px-4 py-2 space-y-2">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left py-2 text-secondary hover:text-primary transition-colors"
+                className="block w-full text-left py-2 text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
               >
                 {item.label}
               </button>

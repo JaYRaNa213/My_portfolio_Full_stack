@@ -4,7 +4,7 @@ import { resumeData } from "@/data/resume-data";
 
 export default function Certificates() {
   return (
-    <section id="certificates" className="py-20 bg-white">
+    <section id="certificates" className="py-20 bg-gray-50 dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -13,8 +13,8 @@ export default function Certificates() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">Certificates & Achievements</h2>
-          <p className="text-xl text-secondary">Professional certifications and learning milestones</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">Certificates & Achievements</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400">Professional certifications and learning milestones</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -30,15 +30,15 @@ export default function Certificates() {
               <div className="flex items-start">
                 <div className={`${cert.iconBg} p-3 rounded-lg mr-4 flex-shrink-0`}>
                   {cert.icon === 'award' ? (
-                    <Award className="text-white text-xl w-5 h-5" />
+                    <Award className="text-white dark:text-black text-xl w-5 h-5" />
                   ) : (
-                    <BarChart className="text-white text-xl w-5 h-5" />
+                    <BarChart className="text-white dark:text-black text-xl w-5 h-5" />
                   )}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-dark mb-2">{cert.title}</h3>
+                  <h3 className="text-xl font-semibold text-black dark:text-white mb-2">{cert.title}</h3>
                   <p className={`font-semibold mb-3 ${cert.issuerColor}`}>{cert.issuer}</p>
-                  <p className="text-secondary text-sm leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                     {cert.description}
                   </p>
                 </div>

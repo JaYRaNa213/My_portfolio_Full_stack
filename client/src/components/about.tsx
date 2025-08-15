@@ -4,7 +4,7 @@ import { resumeData } from "@/data/resume-data";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -13,8 +13,8 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">About Me</h2>
-          <p className="text-xl text-secondary max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">About Me</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             A passionate Computer Science student with hands-on experience in full-stack development and AI integration
           </p>
         </motion.div>
@@ -27,9 +27,9 @@ export default function About() {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
               alt="Modern tech setup"
-              className="rounded-xl shadow-lg w-full h-auto"
+              className="rounded-lg shadow-lg w-full h-auto border border-gray-200 dark:border-gray-700"
             />
           </motion.div>
 
@@ -39,13 +39,13 @@ export default function About() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-dark mb-6">My Journey</h3>
-            <p className="text-secondary mb-6 leading-relaxed">
+            <h3 className="text-2xl font-bold text-black dark:text-white mb-6">My Journey</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
               Currently pursuing Computer Science & Engineering at Rajkiya Engineering College Kannauj (AKTU) 
               with a CGPA of 7.8. I have a strong foundation in both theoretical concepts and practical application, 
               having completed a Diploma in Mechanical Engineering before transitioning to Computer Science.
             </p>
-            <p className="text-secondary mb-6 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
               My passion lies in creating innovative solutions that bridge the gap between traditional business 
               needs and modern technology. I specialize in full-stack web development, AI integration, and 
               automation workflows.
@@ -62,13 +62,13 @@ export default function About() {
                   viewport={{ once: true }}
                   className="flex items-center"
                 >
-                  <div className="bg-accent/10 p-2 rounded-lg mr-3">
-                    {highlight.icon === 'code' && <Code className="w-4 h-4 text-accent" />}
-                    {highlight.icon === 'robot' && <Bot className="w-4 h-4 text-accent" />}
-                    {highlight.icon === 'settings' && <Settings className="w-4 h-4 text-accent" />}
-                    {highlight.icon === 'graduation' && <GraduationCap className="w-4 h-4 text-accent" />}
+                  <div className="bg-gray-100 dark:bg-gray-800 p-2 rounded-lg mr-3">
+                    {highlight.icon === 'code' && <Code className="w-4 h-4 text-black dark:text-white" />}
+                    {highlight.icon === 'robot' && <Bot className="w-4 h-4 text-black dark:text-white" />}
+                    {highlight.icon === 'settings' && <Settings className="w-4 h-4 text-black dark:text-white" />}
+                    {highlight.icon === 'graduation' && <GraduationCap className="w-4 h-4 text-black dark:text-white" />}
                   </div>
-                  <span className="text-secondary">{highlight.title}</span>
+                  <span className="text-gray-600 dark:text-gray-400">{highlight.title}</span>
                 </motion.div>
               ))}
             </div>

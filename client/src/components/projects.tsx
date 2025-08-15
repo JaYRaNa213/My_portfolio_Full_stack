@@ -5,7 +5,7 @@ import { resumeData } from "@/data/resume-data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -14,8 +14,8 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">Featured Projects</h2>
-          <p className="text-xl text-secondary">Some of my notable work and contributions</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">Featured Projects</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400">Some of my notable work and contributions</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -26,7 +26,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:transform hover:-translate-y-1 transition-all duration-300"
+              className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden hover:transform hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 src={project.image}
@@ -35,19 +35,19 @@ export default function Projects() {
               />
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-dark mb-3">{project.title}</h3>
-                <p className="text-secondary mb-4 leading-relaxed">
+                <h3 className="text-xl font-semibold text-black dark:text-white mb-3">{project.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
                 {/* Tech Stack */}
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-dark mb-2">Tech Stack:</h4>
+                  <h4 className="text-sm font-semibold text-black dark:text-white mb-2">Tech Stack:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech) => (
                       <span
                         key={tech}
-                        className="bg-primary/10 text-primary px-2 py-1 rounded text-xs"
+                        className="bg-gray-200 dark:bg-gray-700 text-black dark:text-white px-2 py-1 rounded text-xs"
                       >
                         {tech}
                       </span>
@@ -58,7 +58,7 @@ export default function Projects() {
                 {/* Impact */}
                 <div className="mb-4">
                   {project.impact.map((impact, impactIndex) => (
-                    <div key={impactIndex} className="flex items-center text-accent mb-1">
+                    <div key={impactIndex} className="flex items-center text-gray-600 dark:text-gray-400 mb-1">
                       {impact.includes("reduction") || impact.includes("boost") ? (
                         impact.includes("boost") ? (
                           <ArrowUp className="w-4 h-4 mr-2" />
@@ -68,18 +68,18 @@ export default function Projects() {
                       ) : (
                         <TrendingUp className="w-4 h-4 mr-2" />
                       )}
-                      <span className="text-sm font-semibold">{impact}</span>
+                      <span className="text-sm font-semibold text-black dark:text-white">{impact}</span>
                     </div>
                   ))}
                 </div>
 
                 {/* Links */}
                 <div className="flex space-x-4">
-                  <Button className="bg-primary hover:bg-primary/90">
+                  <Button className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
                   </Button>
-                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                  <Button variant="outline" className="border-gray-300 dark:border-gray-600 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800">
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </Button>
