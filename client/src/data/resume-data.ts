@@ -6,10 +6,10 @@ export const resumeData = {
     phone: "6395857663",
     email: "jayrana0909@gmail.com",
     links: {
-      github: "https://github.com/jayprakash",
-      linkedin: "https://linkedin.com/in/jayprakash",
-      leetcode: "https://leetcode.com/jayprakash",
-      portfolio: "https://portfolio.jayprakash.dev"
+      github: "https://github.com/JaYRaNa213",
+      linkedin: "https://www.linkedin.com/in/jay-prakash-367538313",
+      leetcode: "https://leetcode.com/u/JayRana/",
+      portfolio: "https://jayrana213.github.io/portfolio.github.io/"
     }
   },
   
@@ -114,19 +114,44 @@ export const resumeData = {
     {
       title: "Religious E-commerce & Puja Booking Platform",
       description: "A culturally-aligned full-stack platform for religious product sales, Panditji booking, and devotional blogs. Features include add to cart, live streaming, JWT authentication, and admin dashboard with analytics.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1755678493/Screenshot_1158_pnjuwz.png",
       imageAlt: "Coding environment",
       techStack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "Cloudinary"],
-      impact: ["40% reduction in booking turnaround time", "Increased user engagement via integrated streaming"]
+      impact: ["40% reduction in booking turnaround time", "Increased user engagement via integrated streaming"],
+      liveDemo: "https://brajpandit.vercel.app" 
     },
     {
       title: "Real Estate AI Agent",
       description: "AI-powered real estate voice assistant for lead engagement and qualification. Integrates Vapi for real-time AI voice calls with GPT-4, n8n workflows for CRM integration, and React.js admin dashboard.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1755678629/Screenshot_1157_cmfudq.png",
       imageAlt: "Modern development setup with AI/ML focus",
       techStack: ["Vapi", "OpenAI GPT-4", "n8n", "React.js", "Node.js"],
-      impact: ["70% reduction in agent workload", "80% boost in qualified lead conversions"]
-    }
+      impact: ["70% reduction in agent workload", "80% boost in qualified lead conversions"],
+      liveDemo: "https://realestateaiagentjayprakash.vercel.app/" 
+    },
+    {
+      title: "ContextSwap Desktop App",
+      description: "AI-powered context-aware desktop application for seamless open all websites and local apps in one click. And friendly for User and guest",
+      image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1753504471/Screenshot_1107_imxrn7.png",
+      imageAlt: "Modern development setup with AI/ML focus",
+      techStack: [ "n8n", "React.js", "Node.js"],
+      impact: ["Reduce context switching time by 50%"],
+      liveDemo: "https://contextswap-8lun.onrender.com/" 
+    },
+    {
+  title: "InstaGen Mobile App",
+  description:
+    "AI-powered mobile app that generates optimized Instagram posts and stories. Users simply upload a photo or video and the app automatically analyzes the visual content (objects, mood, colors, and context), applies the most suitable filter, picks a trending background song, and generates engaging caption suggestions. Future updates will include full AI-based photo/video editing and automated reel generation.",
+  image: "https://cdn.auxanoglobalservices.com/wp-content/uploads/2022/10/3rd-screens-580-x-712.webp",
+  imageAlt: "Modern development setup with AI/ML focus",
+  techStack: ["React Native", "OpenAI GPT-4", "n8n", "React.js", "Node.js"],
+  impact: [
+    "90% reduction in manual editing time",
+    "Boosted user engagement by auto-optimizing content for social algorithms"
+  ],
+  liveDemo: "https://realestatebot.vercel.app"
+}
+
   ],
 
   certificates: [

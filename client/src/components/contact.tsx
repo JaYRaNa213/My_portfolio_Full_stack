@@ -4,7 +4,7 @@ import { resumeData } from "@/data/resume-data";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-black">
+    <section id="contact" className="py-20  dark:bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -14,7 +14,7 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">Let's Connect</h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400">Open to internships and entry-level opportunities</p>
+          <p className="text-xl text-gray-200 dark:text-gray-400">Open to internships and entry-level opportunities</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -26,7 +26,7 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold text-black dark:text-white mb-6">Get In Touch</h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+            <p className="text-gray-100 dark:text-gray-400 mb-8 leading-relaxed">
               I'm actively seeking Full Stack Developer and AI Developer internships or entry-level roles. 
               Let's discuss how my expertise in web development, automation workflows, and AI integration 
               can contribute to your team.
@@ -40,7 +40,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-black dark:text-white font-semibold">Phone</p>
-                  <p className="text-gray-600 dark:text-gray-400">{resumeData.personalInfo.phone}</p>
+                  <p className="text-gray-300 dark:text-gray-400">{resumeData.personalInfo.phone}</p>
                 </div>
               </div>
 
@@ -50,7 +50,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-black dark:text-white font-semibold">Email</p>
-                  <p className="text-gray-600 dark:text-gray-400">{resumeData.personalInfo.email}</p>
+                  <p className="text-gray-300 dark:text-gray-400">{resumeData.personalInfo.email}</p>
                 </div>
               </div>
             </div>

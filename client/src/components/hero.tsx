@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, Github, Linkedin, Code, User, Download } from "lucide-react";
+import { Phone, Mail, Github, Linkedin, Code, User, Download, Brain, Zap, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { resumeData } from "@/data/resume-data";
 
@@ -14,6 +14,24 @@ export default function Hero() {
       });
     }
   };
+
+  const highlights = [
+    {
+      icon: <Layers className="w-8 h-8" />,
+      title: "Built 4+ Full-Stack Apps",
+      description: "Modern web applications with React & Node.js"
+    },
+    {
+      icon: <Brain className="w-8 h-8" />,
+      title: "Integrated AI in 2 Production Projects", 
+      description: "GPT-4 powered features in live applications"
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: "Automated Workflows",
+      description: "Using n8n & GPT-4 for business automation"
+    }
+  ];
 
   return (
     <section id="home" className="pt-20 pb-16 bg-black dark:bg-white text-white dark:text-black">
@@ -99,7 +117,6 @@ export default function Hero() {
                 View My Work
               </Button>
               <Button
-                variant="outline"
                 className="border-2 border-white dark:border-black text-white dark:text-black px-8 py-3 hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white"
               >
                 <Download className="w-4 h-4 mr-2" />
@@ -108,18 +125,39 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Hero Image */}
+          {/* Highlight Cards Grid */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex justify-center lg:justify-end"
           >
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600"
-              alt="Professional developer workspace"
-              className="rounded-lg shadow-xl w-full max-w-md h-auto border border-gray-200 dark:border-gray-700"
-            />
+            <div className="grid gap-6 w-full max-w-md">
+              {highlights.map((highlight, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  className="bg-white/10 dark:bg-black/10 backdrop-blur-sm border border-white/20 dark:border-black/20 rounded-lg p-6 hover:bg-white/15 dark:hover:bg-black/15 transition-all duration-300"
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="text-white dark:text-black">
+                      {highlight.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-white dark:text-black mb-1">
+                        {highlight.title}
+                      </h3>
+                      <p className="text-sm text-gray-300 dark:text-gray-600">
+                        {highlight.description}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
