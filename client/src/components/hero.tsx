@@ -116,12 +116,20 @@ export default function Hero() {
               >
                 View My Work
               </Button>
-              <Button
-                className="border-2 border-white dark:border-black text-white dark:text-black px-8 py-3 hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                Download Resume
-              </Button>
+
+              <a
+  href="https://drive.google.com/file/d/1i5wOpu4Kl-zULfRmgCFzlyLpjhoyeHou/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    className="border-2 border-white dark:border-black text-white dark:text-black px-8 py-3 hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white"
+  >
+    <Download className="w-4 h-4 mr-2" />
+    Download Resume
+  </Button>
+</a>
+
             </motion.div>
           </div>
 
