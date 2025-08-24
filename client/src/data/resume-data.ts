@@ -130,6 +130,20 @@ export const resumeData = {
       liveDemo: "https://realestateaiagentjayprakash.vercel.app/" 
     },
     {
+  title: "Real-Time Chat System",
+  description: "A full-stack real-time chat application that enables seamless communication with instant message delivery between users, typing indicators, online status, and secure room-based chats. Built with modern web technologies, it ensures a smooth, responsive, and scalable chatting experience for users.",
+  image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1756016207/Screenshot_1173_ednaag.png",
+  imageAlt: "Real-Time Chat System preview",
+  techStack: ["React.js", "Node.js", "MongoDB", "Socket.IO"],
+  impact: [
+    "Enabled real-time collaboration with instant message updates.",
+    "Improved user engagement through typing indicators and online presence.",
+    "Designed a scalable architecture for handling multiple chat rooms and active users."
+  ],
+  liveDemo: "https://real-time-chat-system-lyart.vercel.app"
+}
+,
+    {
       title: "ContextSwap Desktop App",
       description: "AI-powered context-aware desktop application for seamless open all websites and local apps in one click. And friendly for User and guest",
       image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1753504471/Screenshot_1107_imxrn7.png",
