@@ -36,7 +36,7 @@ export const resumeData = {
       bgColor: "bg-black/5 dark:bg-white/5",
       textColor: "text-black dark:text-white",
       skillBg: "bg-gray-100 dark:bg-gray-800",
-      skillText: "text-black dark:text-white",
+      skillText: "text-black dark:text-white ",
       items: ["React.js", "Node.js", "OpenCV", "NumPy", "Pandas"]
     },
     {
@@ -55,7 +55,7 @@ export const resumeData = {
       textColor: "text-black dark:text-white",
       skillBg: "bg-gray-100 dark:bg-gray-800",
       skillText: "text-black dark:text-white",
-      items: ["Git", "GitHub", "VS Code", "Postman", "AWS", "Ngrok", "Cloudinary"]
+      items: ["Git", "GitHub","n8n", "VS Code", "Postman", "AWS", "Ngrok", "vapi","Cloudinary"]
     },
     {
       category: "AI & Automation",
