@@ -3,7 +3,7 @@ export const resumeData = {
     name: "Jay Prakash",
     title: "Full Stack Developer & AI Enthusiast",
     summary: "Passionate Computer Science student specializing in web development, AI integration, and automation workflows. Open to internships and entry-level opportunities.",
-    phone: "6395857663",
+    phone: "+91 6395857663",
     email: "jayrana0909@gmail.com",
     links: {
       github: "https://github.com/JaYRaNa213",
@@ -114,7 +114,7 @@ export const resumeData = {
     {
       title: "brajpandit.com",
       description: "A culturally-aligned full-stack platform for religious product sales, Panditji booking, and devotional blogs. Features include add to cart, live streaming, JWT authentication, and admin dashboard with analytics.",
-      image: "https://github.com/JaYRaNa213/My_portfolio_Full_stack/blob/main/client/src/data/Screenshot%20(1201).png",
+      image: "./Screenshot%20(1201).png",
       imageAlt: "Coding environment",
       techStack: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Cloudinary"],
       impact: ["40% reduction in booking turnaround time", "Increased user engagement via integrated streaming"],
