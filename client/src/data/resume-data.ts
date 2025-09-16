@@ -112,6 +112,15 @@ export const resumeData = {
 
   projects: [
     {
+      title: "brajpandit.com",
+      description: "A culturally-aligned full-stack platform for religious product sales, Panditji booking, and devotional blogs. Features include add to cart, live streaming, JWT authentication, and admin dashboard with analytics.",
+      image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1755678493/Screenshot_1158_pnjuwz.png",
+      imageAlt: "Coding environment",
+      techStack: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Cloudinary"],
+      impact: ["40% reduction in booking turnaround time", "Increased user engagement via integrated streaming"],
+      liveDemo: "brajpandit.com" 
+    },
+    {
       title: "Religious E-commerce & Puja Booking Platform",
       description: "A culturally-aligned full-stack platform for religious product sales, Panditji booking, and devotional blogs. Features include add to cart, live streaming, JWT authentication, and admin dashboard with analytics.",
       image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1755678493/Screenshot_1158_pnjuwz.png",
