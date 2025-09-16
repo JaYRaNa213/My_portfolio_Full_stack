@@ -114,11 +114,11 @@ export const resumeData = {
     {
       title: "brajpandit.com",
       description: "A culturally-aligned full-stack platform for religious product sales, Panditji booking, and devotional blogs. Features include add to cart, live streaming, JWT authentication, and admin dashboard with analytics.",
-      image: "./Screenshot%20(1201).png",
+      image: "./Screenshot (1201).png",
       imageAlt: "Coding environment",
       techStack: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Cloudinary"],
       impact: ["40% reduction in booking turnaround time", "Increased user engagement via integrated streaming"],
-      liveDemo: "brajpandit.com" 
+      liveDemo: "https://www.brajpandit.com/" 
     },
     {
       title: "Religious E-commerce & Puja Booking Platform",
