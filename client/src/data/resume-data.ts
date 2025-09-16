@@ -114,7 +114,7 @@ export const resumeData = {
     {
       title: "brajpandit.com",
       description: "A culturally-aligned full-stack platform for religious product sales, Panditji booking, and devotional blogs. Features include add to cart, live streaming, JWT authentication, and admin dashboard with analytics.",
-      image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1755678493/Screenshot_1158_pnjuwz.png",
+      image: "https://github.com/JaYRaNa213/My_portfolio_Full_stack/blob/main/client/src/data/Screenshot%20(1201).png",
       imageAlt: "Coding environment",
       techStack: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Cloudinary"],
       impact: ["40% reduction in booking turnaround time", "Increased user engagement via integrated streaming"],
