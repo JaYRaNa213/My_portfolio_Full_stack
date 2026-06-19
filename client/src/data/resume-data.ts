@@ -141,7 +141,7 @@ export const resumeData = {
     {
   title: "Real-Time Chat App and website",
   description: "A full-stack real-time chat application that enables seamless communication with instant message delivery between users, typing indicators, online status, and secure room-based chats. Built with modern web technologies, it ensures a smooth, responsive, and scalable chatting experience for users.",
-  image: "https://res.cloudinary.com/djtq2eywl/image/upload/v1756047925/Screenshot_1179_gqt3eq.png",
+  image: "https://github.com/JaYRaNa213/My_portfolio_Full_stack/blob/main/client/src/data/chatPNG.PNG",
   imageAlt: "Real-Time Chat System preview",
   techStack: ["React.js", "Node.js", "MongoDB", "Socket.IO"],
   impact: [
