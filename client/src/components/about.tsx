@@ -26,11 +26,11 @@ export default function About() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <img
-              src="https://res.cloudinary.com/djtq2eywl/image/upload/v1755679897/240d7r_hne4cd.jpg"
-              alt="Modern tech setup"
-              className="rounded-lg shadow-lg w-full h-auto border border-gray-200 dark:border-gray-700"
-            />
+           <img
+  src="https://res.cloudinary.com/dzg1bmddg/image/upload/v1781862872/iqac87yoqvctqqq1ptl5.png"
+  alt="Profile"
+  className="rounded-lg shadow-lg w-72 md:w-80 lg:w-96 h-auto border border-gray-200 dark:border-gray-700 mx-auto"
+/>
           </motion.div>
 
           <motion.div
@@ -41,9 +41,8 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold text-black dark:text-white mb-6">My Journey</h3>
             <p className="text-gray-350 dark:text-gray-400 mb-6 leading-relaxed">
-              Currently pursuing Computer Science & Engineering at Rajkiya Engineering College Kannauj (AKTU) 
-              with a CGPA of 7.8. I have a strong foundation in both theoretical concepts and practical application, 
-              having completed a Diploma in Mechanical Engineering before transitioning to Computer Science.
+              Computer Science & Engineering graduate with a CGPA of 7.8 and strong expertise in Data Structures & Algorithms, Core Java, JavaScript, React.js, Node.js, Express.js, MongoDB, and Object-Oriented Programming. Contributed to multiple open-source organizations and developed full-stack web applications from design to deployment. Seeking Software Engineer / Full Stack Developer opportunities to apply problem-solving skills and contribute to impactful products.
+
             </p>
             <p className="text-gray-350 dark:text-gray-400 mb-6 leading-relaxed">
               My passion lies in creating innovative solutions that bridge the gap between traditional business 
