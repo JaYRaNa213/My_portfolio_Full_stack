@@ -162,17 +162,17 @@ export const resumeData = {
       liveDemo: "https://templaunch.vercel.app/"
     },
     {
-  title: "InstaGen Mobile App",
+  title: "Micro Plastic Detection System",
   description:
-    "AI-powered mobile app that generates optimized Instagram posts and stories. Users simply upload a photo or video and the app automatically analyzes the visual content (objects, mood, colors, and context), applies the most suitable filter, picks a trending background song, and generates engaging caption suggestions. Future updates will include full AI-based photo/video editing and automated reel generation.",
-  image: "https://cdn.auxanoglobalservices.com/wp-content/uploads/2022/10/3rd-screens-580-x-712.webp",
-  imageAlt: "Modern development setup with AI/ML focus",
-  techStack: ["React Native", "OpenAI GPT-4", "n8n", "React.js", "Node.js"],
+    "Developed a CNN-based image classification system to detect microplastic contamination in water samples using microscopic images.Built and deployed an interactive web application on Hugging Face Spaces with drag-and-drop image uploadand real-time prediction capabilities.Trained and evaluated the model on multi-source water datasets, achieving 98% accuracy and a 0.98 F1-score.",
+  image: "https://res.cloudinary.com/dzg1bmddg/image/upload/v1781862529/ybqfxajqfwb3z0mk7yod.png",
+  imageAlt: "Microplastic detection ",
+  techStack: ["Machine Learning Models ", "CNN", "Huggingface"],
   impact: [
-    "90% reduction in manual editing time",
-    "Boosted user engagement by auto-optimizing content for social algorithms"
+    "Detect the Microplastic in Water samples",
+    "Reduce manual tesing of Micro Plastic in water"
   ],
-  liveDemo: "https://realestatebot.vercel.app"
+  liveDemo: "https://huggingface.co/spaces/zrekana0909/microplastic-detection"
 }
 
   ],
